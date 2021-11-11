@@ -1,10 +1,4 @@
-<%-- 
-    Document   : home
-    Created on : Nov 5, 2021, 3:35:43 AM
-    Author     : DELL
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div class="tab-pane active" id="member">
     <div class="container-fluid">
         <div class="col-lg-12">

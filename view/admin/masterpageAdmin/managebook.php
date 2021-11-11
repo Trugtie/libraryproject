@@ -1,33 +1,30 @@
-<%-- 
-    Document   : home
-    Created on : Nov 5, 2021, 3:35:43 AM
-    Author     : DELL
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<div class="tab-pane active" id="issue">
+<div class="tab-pane active" id="book">
     <div class="container-fluid">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
                     <div class="accordion" id="accordionOne">
                         <div class="col-lg d-flex justify-content-center" style="margin:auto">
-                            <button class="btn btn-light mb-5" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                + Thêm
-                            </button>
                             <div class="form-row col-md-2">
                                 <select name="category" class="form-control" required>
-                                    <option value="sid">- - ID Thành viên - -</option>
-                                    <option value="bid" selected="selected">- - ID Sách - -</option>
-
+                                    <option value="id" selected="selected">- - Thể loại - -</option>
+                                    <option value="name">- - Phiêu lưu - -</option>
+                                    <option value="id">- - Giáo dục - -</option>
+                                    <option value="name">- - Mạo hiểm - -</option>
+                                </select>
+                            </div>
+                            <div class="form-row col-md-2">
+                                <select name="category" class="form-control" required>
+                                    <option value="id" selected="selected">- - ID Sách - -</option>
+                                    <option value="name">- - Tên sách - -</option>
                                 </select>
                             </div>
 
                             <div class="form-row col-md" style="margin-bottom: 3%;">
                                 <form class="form-row col-md">
                                     <div class="col-md">
-                                        <input class="form-control" type="search" placeholder="Nhập ID Thành Viên Hoặc ID Sách...">
+                                        <input class="form-control" type="search" placeholder="Nhập id sách hoặc tên sách">
                                     </div>
                                     <div class="col-md-0">
                                         <button class="btn btn-light" type="submit">Tìm kiếm</button>
@@ -37,39 +34,40 @@
                             <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionOne ">
                                 <form class="form-row col-md">
                                     <div class="col-md">
-                                        <input class="form-control" type="text" placeholder=" ID Thành viên..." required="required">
+                                        <input class="form-control" type="text" placeholder=" Student ID..." required="required">
                                     </div>
                                     <div class="col-md">
-                                        <input class="form-control" type="text" placeholder=" ID Sách..." required="required">
+                                        <input class="form-control" type="text" placeholder=" Book ID..." required="required">
                                     </div>
                                     <div class="col-md-2">
-                                        <button class="btn btn-light" type="submit">Thêm</button>
+                                        <button class="btn btn-light" type="submit">Save</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Admin ID</th>
-                                    <th scope="col">Student ID</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Book ID</th>
-                                    <th scope="col">Date issue</th>
+                                    <th scope="col">id</th>
+                                    <th scope="col">Tên sách</th>
+                                    <th scope="col">Tác giả</th>
+                                    <th scope="col">Năm xuất bảng</th>
+                                    <th scope="col">Thể loại</th>                                    
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Ngày thêm</th>
                                     <th scope="col">Setting</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
+                                    <td>Java</td>
                                     <td>john</td>
-                                    <td>2</td>                                    
+                                    <td>2019</td>
+                                    <td>Giáo dục</td>                                    
+                                    <td>2/3</td>
                                     <td>1/1/2021</td>
                                     <td>
                                         <button class="btn btn-primary zmdi zmdi-edit" type="button"></button>
@@ -81,6 +79,7 @@
                         </table>
 
                     </div>
+
 
                     <nav class="mt-3">
                         <ul class="pagination justify-content-center">
@@ -99,4 +98,5 @@
             </div>
         </div>
     </div>
+    <!--/row-->
 </div>

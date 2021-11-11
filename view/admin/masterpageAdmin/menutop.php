@@ -1,10 +1,4 @@
-<%-- 
-    Document   : home
-    Created on : Nov 5, 2021, 3:35:43 AM
-    Author     : DELL
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!--Start topbar header-->
 <header class="topbar-nav">
     <nav class="navbar navbar-expand fixed-top">
@@ -36,11 +30,11 @@
                         </a>
                     </li>
                     <li class="dropdown-divider"></li>
-                    <li class="dropdown-item"><a href="info.jsp"><i class="icon-wallet mr-2"></i>Tài Khoản</a></li>
+                    <li class="dropdown-item"><a href="info.php"><i class="icon-wallet mr-2"></i>Tài Khoản</a></li>
                     <li class="dropdown-divider"></li>
                     <li class="dropdown-item"><i class="icon-settings mr-2"></i> Cài Đặt</li>
                     <li class="dropdown-divider"></li>
-                    <li class="dropdown-item"><a href="index.jsp"><i class="icon-power mr-2"></i> Đăng Xuất</a></li>
+                    <li class="dropdown-item"><a href="index.php"><i class="icon-power mr-2"></i> Đăng Xuất</a></li>
                 </ul>
             </li>
         </ul>

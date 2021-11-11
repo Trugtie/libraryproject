@@ -1,10 +1,3 @@
-<%-- 
-    Document   : home
-    Created on : Nov 5, 2021, 3:35:43 AM
-    Author     : DELL
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
