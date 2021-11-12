@@ -20,6 +20,11 @@
             </a>
         </li>
         <li>
+            <a href="directorymanagement.php">
+                <i class="zmdi zmdi-assignment-returned"></i> <span>Quản lý danh mục</span>
+            </a>
+        </li>
+        <li>
             <a href="book.php">
                 <i class="zmdi zmdi-book"></i> <span>Quản lý sách</span>
             </a>
