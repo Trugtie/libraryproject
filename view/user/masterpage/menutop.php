@@ -1,14 +1,16 @@
 <!--Start topbar header-->
-<header class="topbar-nav">
+<heade class="topbar-nav">
     <nav class="navbar navbar-expand fixed-top">      
         <ul class="navbar-nav mr-auto align-items-center">
-            <li class="nav-item">
+            <a class="nav-item" href="home.php">
                 <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
                 <h5 class="logo-text">Library</h5>
-            </li>
+            </a>
         </ul>
-
         <ul class="navbar-nav align-items-center right-nav-link ">
+            <li class="nav-item">
+                <a href="ContactUs.php">Liên hệ</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
                     <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle"
@@ -30,6 +32,8 @@
                     <li class="dropdown-divider"></li>
                     <li class="dropdown-item"><a href="info.php"><i class="icon-wallet mr-2"></i>Tài Khoản</a></li>
                     <li class="dropdown-divider"></li>
+                    <li class="dropdown-item"><a href="favorite.php"><i class="icon-heart mr-2"></i>Yêu thích</a></li>
+                    <li class="dropdown-divider"></li>
                     <li class="dropdown-item"><i class="icon-settings mr-2"></i> Cài Đặt</li>
                     <li class="dropdown-divider"></li>
                     <li class="dropdown-item"><a href="../index.php"><i class="icon-power mr-2"></i> Đăng Xuất</a></li>
@@ -37,5 +41,5 @@
             </li>
         </ul>
     </nav>
-</header>
+</heade>
 <!--End topbar header-->
