@@ -9,6 +9,9 @@
             <div id="wrapper" class="toggled">
             <div class="content-wrapper">
                 <div class="container-fluid">
+                    <div class="card col-lg-12">
+                    <?php include "masterpage/archive/main-archive.php" ?>
+                    </div>
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">

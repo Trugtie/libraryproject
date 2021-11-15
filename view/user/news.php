@@ -3,10 +3,8 @@
 <?php include "masterpage/header.php" ?>
 
 <body class="bg-theme bg-theme2">
-    <!--Start topbar header-->
+    <!--Topbar header-->
     <?php include "masterpage/menutop.php" ?>
-    <!--End topbar header-->
-
     <div id="wrapper" class="toggled">
         <div class="content-wrapper">
             <div class="container-fluid row">
@@ -38,7 +36,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-3">
                     <div class="card ">
                         <div class="card-body">
@@ -49,19 +46,12 @@
 
             </div>
         </div>
-        <!-- End container-fluid-->
-        <!--Start Back To Top Button-->
+        <!--Back To Top Button-->
         <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
-        <!--End Back To Top Button-->
-
-        <!--Start footer-->
+        <!--Footer-->
         <?php include "masterpage/footer.php" ?>
-        <!--End footer-->
-
     </div>
     <!--End wrapper-->
-
-
 </body>
 
 </html>

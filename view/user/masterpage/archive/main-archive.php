@@ -34,11 +34,11 @@
                         <div class="card col-xl-6 col-lg-12 bg-transparent">
                             <div class="mt-3 mb-3">
                                 <div class="card-img">
-                                    <img class="img-fluid " src="https://via.placeholder.com/550x350" alt="">
+                                    <img class="img-fluid " src="https://via.placeholder.com/800x400" alt="">
                                 </div>
                                 <div>
                                     <a href="javascript:void();" class="badge badge-success">Thể loại</a>
-                                    <h4><a href="#">Tiêu đề</a></h4>
+                                    <h4><a href="news_post.php">Tiêu đề</a></h4>
                                     <p>Nội dung bản tin</p>
                                     <span>Đăng bởi Admin - Jun 19, 2020</span>
                                 </div>

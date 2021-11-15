@@ -4,7 +4,7 @@
     </div>
 
     <div class="card-body col-md-9">
-        <a class="d-inline-block" href="#">
+        <a class="d-inline-block" href="news_post.php">
             <h4>STU thông báo tuyển sinh đào tạo trình độ thạc sĩ năm 2021 ngành Công nghệ Thực phẩm.</h4>
         </a>
         <p>Trong hơn 24 năm xây dựng và phát triển của mình, STU đã khẳng định là một thương hiệu tốt, uy tín trong việc đào tạo nguồn nhân lực có chất lượng, vững lý thuyết,
