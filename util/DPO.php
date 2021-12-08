@@ -1,11 +1,11 @@
 
 <?php
     class DPO{
-        private const SERVER_NAME = "localhost";
+        private const SERVER_NAME = "localhost?characterEncoding=UTF-8";
         private const  USER_NAME = "root";
         private const PASSWORD = "";
         //sửa lại tên database
-        private const DB_NAME = "dbsinhvien";
+        private const DB_NAME = "quanlythuvien";
         private static $conn=null;
 
         public static function getSession(){
@@ -19,9 +19,9 @@
               }
               return  $conn;
         }
+
         public static function closeSession(){
             $conn=null;
         }
     }
-    DPO::getSession();
 ?>
