@@ -41,12 +41,12 @@ class BookModel{
 
     public function getAuthor()
     {
-        return $this->Author;
+        return $this->author;
     }
 
-    public function setAuthor($Author)
+    public function setAuthor($author)
     {
-        $this->Author = $Author;
+        $this->author = $author;
     }
 
     public function getbookDescription()
