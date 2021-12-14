@@ -2,9 +2,9 @@
 //header('Content-type: text/plain; charset=utf-8');
 include ("../interface/IAction.php");
 include ("../util/DPO.php");
-include ("../model/BookModel.php");
+include ("../model/CategoryBookModel.php");
 
-class BookDao implements IAction{
+class CategoryBookDao implements IAction{
 
     private $connection;
 
@@ -14,20 +14,20 @@ class BookDao implements IAction{
     }
 
     public function getAll(){
-        $bookArray=array();
+        $categoryBookArray=array();
         try{
-            $sql = "SELECT * FROM quanlythuvien.book";
+            $sql = "SELECT * FROM quanlythuvien.categorybook";
             $stmt = $this->connection->query($sql,PDO::FETCH_ASSOC);
             $result=$stmt->fetchAll();
 
             foreach ($result as $value){
-                $bookModel=new BookModel($value["bid"], $value["title"], $value["author"], $value["description"], $value["status"], $value["release"]);
-                array_push($bookArray,$bookModel);
+                $categoryBookModel=new CategoryBookModel($value["bid"], $value["nameCategory"]);
+                array_push($categoryBookArray,$categoryBookModel);
             }
         }catch (PDOException $e){
             echo "Connection failed: " . $e->getMessage();
         }
-    return $bookArray;
+    return $categoryBookArray;
     }
 
     public function getById($id)
@@ -50,9 +50,9 @@ class BookDao implements IAction{
         // TODO: Implement delete() method.
     }
 }
-$bookDao=new BookDao(DPO::getSession());
+$categoryBookDao=new CategoryBookDao(DPO::getSession());
 echo "<br/>";
-var_dump($bookDao->getAll());
+var_dump($categoryBookDao->getAll());
 ?>
 
 
