@@ -1,12 +1,19 @@
 <?php
     include ("../abstract/PersonAbstract.php");
     class AdminModel extends PersonAbstract{
+        /**
+         * @var mixed
+         */
 
-
+        public function __construct($id, $fullName, $username, $password, $email)
+        {
+            parent::__construct($id, $fullName, $username, $password, $email);
+        }
 
         /**
          * @return mixed
          */
+
         public function getId()
         {
             return $this->id;
@@ -83,7 +90,5 @@
         {
             $this->email = $email;
         }
-
-
     }
 ?>

@@ -1,10 +1,10 @@
 <?php
 abstract class PersonAbstract{
-    private $id;
-    private $fullName;
-    private $username;
-    private $password;
-    private $email;
+    protected $id;
+    protected $fullName;
+    protected $username;
+    protected $password;
+    protected $email;
 
     /**
      * @param $id
@@ -15,7 +15,9 @@ abstract class PersonAbstract{
      */
     public function __construct($id, $fullName, $username, $password, $email)
     {
-        $this->id = $id;
+        if($id!=null){
+            $this->id = $id;
+        }
         $this->fullName = $fullName;
         $this->username = $username;
         $this->password = $password;

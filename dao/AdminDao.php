@@ -35,9 +35,16 @@ class AdminDao implements IAction{
 
     }
 
-    public function add($object)
-    {
-        // TODO: Implement add() method.
+    public function add($object){
+        var_dump($object);
+            try{
+                $sql = "INSERT INTO quanlythuvien.admin (username, password, fullname, email) VALUES (?,?,?,?)";
+                $stmt = $this->connection->prepare($sql);
+                $stmt->execute([$object->getUsername(), $object->getPassword(), $object->getFullName(),$object->getEmail()]);
+            }catch (PDOException $e){
+                echo "Connection failed: " . $e->getMessage();
+            } finally {
+        }
     }
 
     public function update($object)
@@ -50,9 +57,12 @@ class AdminDao implements IAction{
         // TODO: Implement delete() method.
     }
 }
-$adminDao=new AdminDao(DPO::getSession());
-echo "<br/>";
-var_dump($adminDao->getAll());
+//$adminDao=new AdminDao(DPO::getSession());
+//echo "<br/>";
+//echo "Sau khi thêm";
+//$adminDao->add(new AdminModel(null,"Tran Dai Nha","nha223","12345678","nha223@gmail.com"));
+////var_dump($adminDao->getAll());
+//DPO::closeSession();
 ?>
 
 
